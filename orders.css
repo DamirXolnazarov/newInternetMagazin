@@ -1,0 +1,406 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 72px;
+  z-index: 1;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  font-family: "Rubik", sans-serif;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1) !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .inform {
+  width: 1208px;
+  height: 72px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.header .search {
+  margin-left: -15px;
+  width: 375px;
+  height: 40px;
+  position: relative;
+}
+.header .search input {
+  width: 375px;
+  font-size: 16px;
+  height: 40px;
+  border: 1px solid #70C05B;
+  padding: 0px 15px 0px 15px;
+  border-radius: 4px;
+}
+.header .search input:focus {
+  outline: #70C05B;
+}
+.header .search svg {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  background-color: rgb(255, 255, 255);
+  top: 8px;
+  cursor: pointer;
+}
+.header .catalog button {
+  width: 140px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  height: 40px;
+  display: flex;
+  padding: 10px 25px 10px 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #70C05B;
+  align-items: center;
+}
+.header .catalog button h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.header .profile {
+  width: 201px;
+  padding: 10px;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .profile .profileName {
+  margin-left: -50px;
+}
+.header .profile .profileName h3 {
+  font-size: 16px;
+  font-weight: 200;
+}
+.header .btns {
+  width: 230px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.header .btns .loveBtn {
+  width: 65px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .btns .loveBtn a {
+  color: #414141;
+  line-height: 23px;
+  text-decoration: none;
+}
+.header .btns .loveBtn a h3 {
+  font-weight: 400;
+}
+.header .btns .orderBtn {
+  width: 42px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .btns .orderBtn a {
+  color: #FF6633;
+  line-height: 20px;
+  text-decoration: none;
+}
+.header .btns .orderBtn a h3 {
+  font-weight: 400;
+}
+.header .btns .basketBtn {
+  width: 49px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .btns .basketBtn #numberOfCor {
+  position: absolute;
+  font-size: 9px;
+  display: flex;
+  flex-direction: row;
+  left: 22px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  top: -2px;
+  border-radius: 4px;
+  background: #FF6633;
+}
+.header .btns .basketBtn a {
+  line-height: 20px;
+  color: #414141;
+  text-decoration: none;
+}
+.header .btns .basketBtn a h3 {
+  font-weight: 400;
+}
+
+.order {
+  width: 100%;
+  font-family: "Rubik", sans-serif;
+  padding: 100px 116px 0px 116px;
+  height: 120vh;
+  background: #FBF8EC;
+}
+.orderOfPages {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+  width: 180px;
+}
+.orderOfPages h3 {
+  font-weight: 400;
+  color: #414141;
+}
+.orderOfPages #currentPage {
+  color: #8F8F8F;
+}
+.orderOfPages #greater {
+  font-size: 20px;
+}
+.order .titleOfPage {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+.order .titleOfPage h1 {
+  font-size: 64px;
+  color: #414141;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+}
+.order .datas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  color: #414141;
+}
+.order .datas .dates {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order .datas .dates h3 {
+  font-weight: 800;
+}
+.order .datas .dates blockquote {
+  width: 105px;
+  height: 32px;
+  background: #F3F2F1;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.order .datas .shippingSetting {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.order .datas .shippingSetting h3 {
+  font-size: 24px;
+}
+.order .datas .shippingSetting button {
+  background: #70C05B;
+  border-radius: 4px;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  padding: 15px 15px;
+  border: none;
+  height: 40px;
+  color: white;
+}
+.order .goods {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order .goods .block {
+  width: 271px;
+  height: 349px;
+  background: #FFFFFF;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  transition: 0.3s;
+  color: #414141;
+}
+.order .goods .block:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+.order .goods .block:hover .btn button {
+  background: #FF6633;
+  color: white;
+  border: none;
+}
+.order .goods .block_1 {
+  width: 250px;
+  display: flex;
+  height: 160px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.order .goods .block_1_1 {
+  width: 37px;
+  height: 37px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.order .goods .block_1_1 span {
+  font-weight: 800;
+  margin-left: 2px;
+}
+.order .goods .block_1_2 {
+  background-repeat: no-repeat;
+  width: 160px;
+  left: 70px;
+  position: absolute;
+  margin-left: -15px;
+  background-position: center;
+  background-image: url("./assets/img/image.png");
+  height: 150px;
+}
+.order .goods .block_1_21 {
+  background-repeat: no-repeat;
+  width: 160px;
+  left: 70px;
+  position: absolute;
+  margin-left: -15px;
+  background-position: center;
+  background-image: url("./assets/img/image (1).png");
+  height: 150px;
+}
+.order .goods .block_1_22 {
+  background-repeat: no-repeat;
+  width: 160px;
+  background-size: 200px;
+  margin-left: -15px;
+  left: 70px;
+  position: absolute;
+  background-position: center;
+  background-image: url("./assets/img/image (2).png");
+  height: 150px;
+}
+.order .goods .block_1_23 {
+  background-repeat: no-repeat;
+  width: 160px;
+  margin-left: -15px;
+  left: 70px;
+  position: absolute;
+  background-position: center;
+  background-image: url("./assets/img/image (3).png");
+  height: 150px;
+}
+.order .goods .block_1_3 {
+  margin: 10px -9px;
+}
+.order .goods .block_1_3 button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  border: none;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 4px;
+  align-items: center;
+}
+.order .goods .block_2 {
+  height: 185px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 5px 8px;
+  flex-direction: column;
+}
+.order .goods .block_2_1 h3 {
+  font-weight: 800;
+  font-size: 18px;
+}
+.order .goods .block_2_2 {
+  display: flex;
+  height: 115px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.order .goods .block_2_2 h3 {
+  font-weight: 400;
+}
+.order .goods .block_2_2 button {
+  width: 255px;
+  height: 40px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: #70C05B;
+  background: white;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+}
+.order .seeBtn {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.order .seeBtn button {
+  width: 200px;
+  height: 40px;
+  color: #606060;
+  border-radius: 4px;
+  background: #F3F2F1;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}/*# sourceMappingURL=orders.css.map */
